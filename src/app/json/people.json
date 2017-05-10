@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Chikku",
+        "age" : 10,
+        "mail" : "chikku@gmail.com"
+    },
+    {
+        "name" : "Ashraf",
+        "age" : 11,
+        "mail" : "ashraf@gmail.com"
+    },
+    {
+        "name" : "Bibin",
+        "age" : 12,
+        "mail" : "bibin@gmail.com"
+    },
+    {
+        "name" : "Archana",
+        "age" : 13,
+        "mail" : "archana@gmail.com"
+    },
+     {
+        "name" : "George",
+        "age" : 14,
+        "mail" : "george@gmail.com"'
+    },
+    {
+        "name" : "Anand",
+        "age" : 15,
+        "mail" : "anand@gmail.com"'
+    }    
+]

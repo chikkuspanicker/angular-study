@@ -1,0 +1,36 @@
+ <div class="row ">
+     <hr/>
+     <div class="col-xs-12">
+        <input [(ngModel)]="searchPersonText" class="col-xs-3">
+        <button class="btn btn-default btn-primary btn-small pull-right" (click)="addNewPersonClickHandler();">
+            Add New
+        </button>
+     </div> 
+     <div class="col-xs-12">
+        <add-person *ngIf="addNewPersonAreaExposed"></add-person>   
+     </div>
+     <div class="col-xs-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <!-- <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>24</td>
+                </tr>
+            </tbody> -->
+            <tbody>
+                <tr *ngFor="let person of (persons | filterPerson : searchPersonText);let index = index;">
+                    <td>{{person.name}}</td>
+                    <td>{{person.age}}</td>
+                    <td>{{person.email}}</td>
+                    <td><button class="btn btn-danger btn-small pull-right" (click)="deletePersonClickHandler(index);">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+</div>
